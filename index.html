@@ -2,18 +2,45 @@
 	<head>
 		<title>Dance Party</title>
 		<style>
-			* { font-family:Helvetica,Arial,Sans-Serif; }
+			* { font-family:Helvetica,Arial,Sans-Serif; background-image: url("memphis-mini.png") }
 			div { text-align:center; padding:5px 0; }
 			.bigtext { font-weight:bold; font-size:2em; }
+			div.colorchange0, div.colorchange1, div.colorchange2, div.colorchange3, div.colorchange4, div.colorchange5 { display:inline; animation-name:changeme; animation-duration:5s; animation-iteration-count: infinite; letter-spacing:-.2em; }
+			div.colorchange1 { color:orange; animation-delay:1s; }
+			div.colorchange2 { color:red; animation-delay:2s; }
+			div.colorchange3 { color:purple; animation-delay:3s; }
+			div.colorchange4 { color:blue; animation-delay:4s; }
+			div.colorchange5 { color:green; animation-delay:5s; }
+			@keyframes changeme{
+				0% { color:yellow; }
+				20% { color:orange; }
+				40% { color:red; }
+				60% { color:purple; }
+				80% { color:blue; }
+				100% { color:green; }
+			}
+			.somespace { display:inline; margin:6px; }
 		</style>
 	</head>
 	<body>
 		<div><img src="pokemon_party.gif"/></div>
 		<div>
-			Join us for a <span class="bigtext">DANCE PARTY</span><br/>
+			Join us for a <span class="bigtext changeme">
+				<div class="colorchange0">D</div>
+				<div class="colorchange1">A</div>
+				<div class="colorchange2">N</div>
+				<div class="colorchange3">C</div>
+				<div class="colorchange4">E</div>
+				<div class="somespace"></div>
+				<div class="colorchange5">P</div>
+				<div class="colorchange0">A</div>
+				<div class="colorchange1">R</div>
+				<div class="colorchange2">T</div>
+				<div class="colorchange3">Y</div>
+				</span><br/>
 			in honor of<br/>
 			<span class="bigtext">Brandon and Emma</span><br/>
-			turning <span class="bigtext">5</span>!!!<br/>
+			turning <span class="bigtext">5!!!</span><br/>
 			<br/>
 			Saturday, March 21st<br/>
 			11 am - 1 pm<br/>
