@@ -1,6 +1,8 @@
 <html>
 	<head>
 		<title>Dance Party</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
 		<style>
 			* { font-family:Helvetica,Arial,Sans-Serif; background-image: url("memphis-mini.png") }
 			div { text-align:center; padding:5px 0; }
@@ -20,13 +22,15 @@
 				100% { color:green; }
 			}
 			.somespace { display:inline; margin:6px; }
-			.greentext { color:green; }
-			.pinktext { color:#ff1694; }
+			.greentext { color:green; font-family:Gochi Hand,sans-serif; font-size:70px; }
+			.pinktext { color:#ff1694; font-family:Gochi Hand,sans-serif; font-size:70px; }
+			.invite, .invite>span>div { font-family:Permanent Marker,sans-serif; }
+			.invite { font-size:20px; padding-bottom:40px; }
 		</style>
 	</head>
 	<body>
 		<div><img src="pokemon_party.gif"/></div>
-		<div>
+		<div class="invite">
 			Join us for a <span class="bigtext changeme">
 				<div class="colorchange0">D</div>
 				<div class="colorchange1">A</div>
@@ -48,7 +52,8 @@
 				<div class="colorchange3">!</div>
 				<div class="colorchange4">!</div>
 				</span><br/>
-			<br/>
+		</div>
+		<div>
 			Saturday, March 21st<br/>
 			11 am - 1 pm<br/>
 			<br/>
